@@ -25,3 +25,14 @@ class MYException extends Exception{
 	}
 	
 }
+public class Test {
+	   public static void main(String[] args) {
+		try {
+			System.out.println(MyTool.Parseint("345s"));
+		}
+		catch (MYException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	  }
+	}
