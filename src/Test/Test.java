@@ -16,3 +16,12 @@ class MyTool{
 		return result;
 	}
 }
+class MYException extends Exception{
+	public MYException (String message) {
+		super(message);
+	}
+	public String getMessage() {
+		return "Exception in thread "+Thread.currentThread().getName()+" "+" For input string:";
+	}
+	
+}
